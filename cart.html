@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Чешем Языком - Товар</title>
+
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/cart.css">
+
+    <script src="scripts/loader.js"></script>
+</head>
+<body>
+    <div id="loader-screen">
+        <div id="first-load-block" class="load-block"></div>
+        <div id="second-load-block" class="load-block"></div>
+        <div id="third-load-block" class="load-block"></div>
+        <div id="forth-load-block" class="load-block"></div>
+    </div>
+
+    <div id="wrapper">
+        <header id="header">
+            <div id="header-content">
+                <a id="logo" href="index.html">Чешем Языком</a>
+                <div>
+                    <a id="cart-link" href="cart.html"></a>
+                </div>
+            </div>
+        </header>
+
+        <div id="content-wrapper">
+            <main id="content">
+                <div id="cart" class="cart-block">
+                    <h1 class="heading">Корзина</h1>
+                    <div id="cart-contents" class="cart-form">
+                        <div id="item-table">
+                            <div id="item-name" class="item-table-col">
+                                <div class="item-table-heading">Наименование</div>
+                            </div>
+                            <div id="item-qty" class="item-table-col">
+                                <div class="item-table-heading">Кол-во</div>
+                            </div>
+                            <div id="item-price" class="item-table-col">
+                                <div class="item-table-heading">Цена</div>
+                            </div>
+                            <div id="item-total" class="item-table-col">
+                                <div class="item-table-heading">Итого</div>
+                            </div>
+                        </div>
+                        <div id="item-totals">
+                            <div id="shipment" class="item-totals-row">
+                                <div class="item-table-heading">Доставка:</div>
+                                <div id="shipment-total">0 р.</div>
+                            </div>
+                            <div id="shipment" class="item-totals-row">
+                                <div class="item-table-heading">Сумма к оплате:</div>
+                                <div id="grand-total"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="checkout" class="cart-block">
+                    <h1 class="heading">Оформление</h1>
+                    <div id="person-form" class="cart-form">
+                        <div>
+                            <input name="name" class="form-input" type="text" placeholder="Имя">
+                        </div>
+                        <div>
+                            <input name="surname" class="form-input" type="text" placeholder="Фамилия">
+                        </div>
+                        <div>
+                            <input name="phone" class="form-input" type="tel" placeholder="Телефон">
+                        </div>
+                        <div>
+                            <input name="email" class="form-input" type="email" placeholder="Эл. почта">
+                        </div>
+                        <div>
+                            <input name="address" class="form-input" type="text" placeholder="Адрес доставки">
+                        </div>
+                    </div>
+                </div>
+                <div id="place-order">
+                    <a id="place-order-button" href="place-order.html" class="product-button">Оформить заказ</a>
+                </div>
+            </main>
+        </div>
+
+        <footer id="footer">
+            <div>Ветошкина Елена</div>
+            <div>портфолио</div>
+            <div>веб-плакат</div>
+            <div>интерактивный плакат</div>
+        </footer>
+    </div>
+
+    <script src="scripts/cart.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url(general.css);
+
+#content-wrapper {
+    flex-grow: 1;
+}
+
+#content {
+    height: auto;
+    padding: 50px 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    gap: 40px;
+}
+
+.cart-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#item-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.item-table-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-table-heading {
+    font-size: 17px;
+}
+
+#item-totals {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-totals-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cart-form {
+    max-width: 680px;
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 25px;
+    border: 2px solid #000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#person-form {
+    padding: 25px 85px 25px 35px;
+}
+
+.form-input {
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    background-color: transparent;
+
+    border: none;
+    border-bottom: 2px solid #000;
+
+    font-size: 17px;
+    font-family: Lack;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+#place-order {
+    box-sizing: border-box;
+}

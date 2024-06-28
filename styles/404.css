@@ -1,0 +1,11 @@
+@import url(general.css);
+
+#content {
+    padding: 50px 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
